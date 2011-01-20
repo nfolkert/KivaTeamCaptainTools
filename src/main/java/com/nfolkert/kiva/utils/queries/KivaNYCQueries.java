@@ -171,7 +171,7 @@ public class KivaNYCQueries
             // getNYCLendersFromKiva(1, 100);
 
             // Uncomment to get latest lenders joined
-            getLatestNYCLendersFromKiva(1, 10);
+            getLatestNYCLendersFromKiva(1, 100);
             // getLatestPittsburghLendersFromKiva(1, 1200);
         }
         finally
