@@ -1093,7 +1093,7 @@ public class JSONObject implements Serializable
         }
         catch (JSONException e)
         {
-            throw new BaseRuntimeException(e);
+            throw new RuntimeException(e);
         }
         return sb.toString();
     }

@@ -103,7 +103,7 @@ public class KivaResultManager
         }
         catch (Exception e)
         {
-            throw new BaseRuntimeException(e);
+            throw new RuntimeException(e);
         }
     }
 

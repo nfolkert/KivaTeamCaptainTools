@@ -707,7 +707,7 @@ public class FileUtilsExt
         }
         catch (Exception e)
         {
-            throw new BaseRuntimeException(e);
+            throw new RuntimeException(e);
         }
     }
 

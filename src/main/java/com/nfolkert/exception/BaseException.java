@@ -8,24 +8,6 @@ import java.io.StringWriter;
 
 import com.nfolkert.utils.TextUtils;
 
-/**
- * This is the base exception for all exceptions thrown by the application.
- * <p/>
- * All exceptions thrown by third-party libraries should be wrapped in BaseException or its derived classes if they are
- * to be thrown to the caller of the method.
- * <p/>
- * This class should be sub-classed for specific exception types (e.g. RollbackException, DuplicateIDException), but only
- * in cases where there is additional information that the caller can make use of. Otherwise it is perfectly acceptance
- * to throw BaseException.
- * <p/>
- * The message strings associated with this class are not localized, so they should only be used for logging and debugging.
- * At the top level of the application, the client should create its own error messages based on the type of the exception
- * thrown and the information contained within it.
- * <p/>
- * Created by: shillion
- * Date: Dec 9, 2004
- * Time: 12:07:30 PM
- */
 public class BaseException extends NestableException
 {
     private transient boolean _hasBeenLogged;
